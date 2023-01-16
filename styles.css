@@ -1,0 +1,89 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  border-width: 0;
+  border-style: solid;
+  word-break: break-all;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+body {
+  font-size: 1.4em;
+  line-height: 1.5;
+  color: #333;
+  background: #e8e8e8;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 700px;
+  padding: 16px;
+  width: 100%;
+  background: white;
+  border: 2px solid #888;
+  margin: 40px auto 0px;
+}
+
+/* chat css */
+.chat-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.chat-box .chat-image {
+  width: 92px;
+  min-width: 92px;
+}
+
+.chat-box .chat-image img {
+  width: 100%;
+  border: 2px solid #eee;
+  border-radius: 50%;
+}
+
+.chat-box .chat-area {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  background: #eee;
+  margin-top: 12px;
+  position: relative;
+}
+
+.chat-box .chat-area::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  margin-top: -12px;
+  border: 10px solid transparent;
+  border-right-color: #eee;
+}
+
+/* style 1 */
+
+.chat-box.chat-style-1 .chat-area {
+  background-color: skyblue;
+}
+
+.chat-box.chat-style-1 .chat-area::before {
+  border-right-color: skyblue;
+}
+
+/* style 2 */
+
+.chat-box.chat-style-2 .chat-area {
+  background-color: papayawhip;
+}
+
+.chat-box.chat-style-2 .chat-area::before {
+  border-right-color: papayawhip;
+}
