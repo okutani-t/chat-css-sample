@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-size: 1.4em;
+  font-size: 1.6em;
   line-height: 1.5;
   color: #333;
   background: #e8e8e8;
@@ -61,7 +61,7 @@ body {
   content: "";
   display: inline-block;
   position: absolute;
-  top: 50%;
+  top: 32px;
   left: -20px;
   margin-top: -12px;
   border: 10px solid transparent;
